@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="main" defer ></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -27,12 +27,12 @@
         </div>
         <div class="navbar">
             <ul class="navbar__menu">
-                <li class="navbar__menu__item">Home</li>
-                <li class="navbar__menu__item">About</li>
-                <li class="navbar__menu__item">Skills</li>
-                <li class="navbar__menu__item">My work</li>
-                <li class="navbar__menu__item">Testimonial</li>
-                <li class="navbar__menu__item">Contact</li>
+                <li class="navbar__menu__item active" data-link="#home">Home</li>
+                <li class="navbar__menu__item " data-link="#about">About</li>
+                <li class="navbar__menu__item" data-link="#skills">Skills</li>
+                <li class="navbar__menu__item" data-link="#work">My work</li>
+                <li class="navbar__menu__item" data-link="#testimonials">Testimonial</li>
+                <li class="navbar__menu__item" data-link="#contact">Contact</li>
             </ul>
         </div>
 
@@ -42,19 +42,20 @@
         </button>
     </nav>
     
-    
+    <!-- home -->
     <section id="home">
-
-        <img
-        src="imgs/profile.png"
-        alt="Dohui's profile photo"
-        class="home__avatar"
-        width="300px"
-        height="300px"
-        />
-        <h1 class="home__title">Hello,<br> I'm Dohui.</h1>
-        <h2 class="home__description">I'm a developer who majored in Indian Studies in Hankuk university of foreign studies.</h2>
-        <button class="home__contact">Contact Me!</button>
+        <div class ="home__container">
+            <img
+            src="imgs/profile.png"
+            alt="Dohui's profile photo"
+            class="home__avatar"
+            width="300px"
+            height="300px"
+            />
+            <h1 class="home__title">Hello,<br> I'm Dohui.</h1>
+            <h2 class="home__description">I'm a developer who majored in Indian Studies in Hankuk university of foreign studies.</h2>
+            <button class="home__contact">Contact Me!</button>
+        </div>
     </section>
 
     <!-- About -->
@@ -136,6 +137,13 @@
                 <div class="skill__bar">
                     <div class="skill__value" style="width: 30%;"></div>
                 </div>
+                <div class="skill__description">
+                    <span>JAVA</span>
+                    <span>70%</span>
+                </div>
+                <div class="skill__bar">
+                    <div class="skill__value" style="width: 70%;"></div>
+                </div>
             </div>
             <div class="skillset__right">
                 <div class="tools">
@@ -196,9 +204,10 @@
             </div>
         </div>
     </section>
+
     <!-- Testimonials -->
     <section id="testimonials" class="section">
-        <div class="siection__container">
+        <div class="selection__container">
             <h1>Testimonials</h1>
         <h3>See what they say about me</h3>
         <div class="testimonials">
@@ -214,29 +223,22 @@
                     Labore beatae voluptatibus voluptatum a ullam quo natus, deleniti debitis doloremque cupiditate voluptate, facilis sequi adipisci optio?
                     Nam vel veritatis corrupti debitis!
                     </p>
-                    <p class="name"><a href="">Samsung</a></p>
+                    <p class="name"><a href=""> 도희 </a> 멋쟁이사자처럼</p>
                 </div>
             </div>
-        </div>
-
-        <h1>Testimonials</h1>
-        <h3>See what they say about me</h3>
-        <div class="testimonials">
             <div class="testimonial">
                 <div class="testimonial__speech-bubble">
                     <p>
                     그 친구는요 정말이지! bus voluptatum a ullam quo natus, deleniti debitis doloremque cupiditate voluptate, facilis sequi adipisci optio?
                     Nam vel veritatis corrupti debitis!
                     </p>
-                    <p class="name"><a href="">Samsung</a></p>
+                    <p class="name"><a href=""> 도희 </a> 튜터 </p>
                 </div>
                 <img
                 src="imgs/people1.jpg"
                 alt="Avata"
                 class="testimonial__avatar"
                 />
-            </div>
-        </div>
         </div>
     </section>
 
